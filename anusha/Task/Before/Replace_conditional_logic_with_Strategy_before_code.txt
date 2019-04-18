@@ -1,4 +1,5 @@
 //Original code with lots of conditional logic.
+//Lets say there is a method that calculates insurance costs based on a person's income:
 public double CalculateInsurance(double income)
 {
   if (income <= 100000)
@@ -15,3 +16,8 @@ public double CalculateInsurance(double income)
     return (income - 600000)*0.02 + 105600;
   }
 }
+
+/** Let's analyze above example. Here we see the four "income bands widths", separated into four calculation strategies. In general, the following is a formula:
+
+i.e. (income - adjustment) * weight + constant
+The goal is to provide separate classes to calculate each strategy, and transform the original class to make it more transparent. **/
