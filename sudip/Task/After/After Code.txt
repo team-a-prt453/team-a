@@ -1,0 +1,15 @@
+public Test( bool a, int b, string c )
+    : this( a, b )
+{
+    this.m_C = c;
+}
+public Test( bool a, int b, float d )
+    : this( a, b )
+{
+    this.m_D = d;
+}
+private Test( bool a, int b )
+{
+    this.m_A = a;
+    this.m_B = b;
+}
