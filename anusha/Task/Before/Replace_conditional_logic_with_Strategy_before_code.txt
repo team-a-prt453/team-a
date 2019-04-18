@@ -1,0 +1,17 @@
+//Original code with lots of conditional logic.
+public double CalculateInsurance(double income)
+{
+  if (income <= 100000)
+  {
+    return income*0.365;
+  } else if (income <= 300000)
+  {
+    return (income-100000)*0.2 + 35600;
+  } else if (income <= 600000)
+  {
+    return (income - 300000)*0.1 + 76500;
+  } else
+  {
+    return (income - 600000)*0.02 + 105600;
+  }
+}
