@@ -1,0 +1,19 @@
+private int sumBest(String data, int size, int howMany) {
+    Scanner scanner = new Scanner(data);
+    int[] scores = new int[size];
+    for (int i = 0; i < size; ++i) {
+        scores[i] = scanner.nextInt();
+    }
+    Arrays.sort(scores);
+    int sum = 0;
+    for (int i = scores.length-howMany; i < scores.length; ++i) {
+        sum += scores[i];
+    }
+    return sum;
+}
+
+
+
+int sum = sumBestBefore("1 2 3 4 5 6 7 8 9 10", 10, 3);
+System.out.println("Sum of best 3: " + sum);
+// prints: Sum of best 3: 27
