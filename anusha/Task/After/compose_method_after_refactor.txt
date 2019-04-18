@@ -1,0 +1,34 @@
+Below is the same code, but it is refactored to Composed Method making each step explicit, thus the whole code is much more readable.
+
+private int sumBest(String data, int size, int howMany) {
+    int[] scores = loadScores(data, size);
+    sort(scores);
+    return sumLast(scores, howMany);
+}
+ 
+private int[] loadScores(String data, int size) {
+    Scanner scanner = new Scanner(data);
+    int[] numbers = new int[size];
+    for (int i = 0; i < size; ++i) {
+        numbers[i] = scanner.nextInt();
+    }
+    return numbers;
+}
+ 
+private int sumLast(int[] scores, int howMany) {
+    int sum = 0;
+    for (int i = scores.length-howMany; i < scores.length; ++i) {
+        sum += scores[i];
+    }
+    return sum;
+}
+
+
+
+Now it’s clearly visible that whole processing consists of three steps:
+
+Loading scores from given data string.
+Sorting the scores.
+Summing the last (biggest) scores.
+
+The sumBest() method does whole processing at the single level of abstraction – loads scores, sorts them, and sums. It operates on scores.
