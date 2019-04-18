@@ -1,0 +1,26 @@
+Description 
+
+
+-get sample of dirty code from google
+-code description and what and why it is beneficial to the product 
+-motivation and justification for changes 
+- 
+
+grooming stage:
+
+-scenario 
+-sample code of the before refactoring stage
+-code description and what and why it is beneficial to the product 
+- 
+
+2 : refactoring
+
+q9 process 
+before and after stage
+
+
+Estimation 
+Acceptance criteria 
+Risk severity 
+
+
