@@ -1,0 +1,14 @@
+//After code implementing the Strategy pattern
+public double CalculateInsurance(double income)
+{
+  InsuranceStrategy s;
+  if (income <= 100000)
+    s = new InsuranceStrategyLow();
+  else if (income <= 300000)
+    s = new InsuranceStrategyMedium();
+  else if (income <= 600000)
+    s = new InsuranceStrategyHigh();
+  else
+    s = new InsuranceStrategyVeryHigh();
+  return s.Calculate(income);
+}
