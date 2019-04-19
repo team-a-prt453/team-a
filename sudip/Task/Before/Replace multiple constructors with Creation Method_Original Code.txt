@@ -1,3 +1,5 @@
+// Loan Risk Calculator
+
 public class Loan...
    public Loan(double commitment, int riskRating, Date maturity) {
       this(commitment, 0.00, riskRating, maturity, null);
@@ -6,7 +8,8 @@ public class Loan...
    public Loan(double commitment, int riskRating, Date maturity, Date expiry) {
       this(commitment, 0.00, riskRating, maturity, expiry);
    }
-   
+ // Loan class has numerous constructors
+
  public Loan(double commitment, double outstanding, 
                int customerRating, Date maturity, Date expiry) {
       this(null, commitment, outstanding, customerRating, maturity, expiry);
