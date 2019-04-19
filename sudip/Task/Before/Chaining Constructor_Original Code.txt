@@ -1,3 +1,5 @@
+//Creating a private initialization method that we call from each constructor
+
 public class Test
 {
     public Test( bool a, int b, string c )
