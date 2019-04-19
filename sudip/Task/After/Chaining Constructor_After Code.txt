@@ -1,4 +1,6 @@
-public Test( bool a, int b, string c )
+// Using chaining constructor pattern
+
+public Test( bool a, int b, string c ) //initializes a.b and c
     : this( a, b )
 {
     this.m_C = c;
