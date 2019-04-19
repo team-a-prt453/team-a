@@ -1,3 +1,5 @@
+// Replace multiple constructors with Creation Method
+
 public class CapitalCalculationTest...
    public void testTermLoanWithRiskAdjustedCapitalStrategy() {
       ...
@@ -10,6 +12,7 @@ public class Loan...
    public static Loan createTermLoan(double commitment, int riskRating, Date maturity) {
       return new Loan(commitment, 0.00, riskRating, maturity, null);
    }
+// applied Move Method on the creation method, createTermLoan, to move it to Loan
    
    public static Loan createTermLoan(CapitalStrategy riskAdjustedCapitalStrategy,
       double commitment, double outstanding, int riskRating, Date maturity) {
