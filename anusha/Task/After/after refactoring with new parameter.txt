@@ -1,0 +1,12 @@
+/**Let's replace the string value "Hello, World!" in the method generateText () 
+with the new parameter text. The value "Hello, World!"
+ is passed to the method in the updated method call generateText("Hello, World!").**/
+
+public class HelloWorldPrinter {
+    public static void print() {
+        System.out.println(generateText("Hello, World!"));
+    }
+    private static String generateText(String text) {
+        return text.toUpperCase();
+    }
+}

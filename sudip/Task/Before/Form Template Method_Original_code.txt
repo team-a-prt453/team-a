@@ -1,0 +1,23 @@
+class Article {
+  // ...
+  public String getTitle() { /* … */ }
+  public String getIntro() { /* … */ }
+  public String getBody() { /* … */ }
+  public String getAuthor() { /* … */ }
+  public String getDate() { /* … */ }
+
+  public String markdownView() {
+    String output = "# " + getTitle() + "\n\n";
+    output += "> " + getIntro() + "\n\n";
+    output += getBody() + "\n\n";
+    output += "_Written by " + getAuthor() + " on " + getDate() + "_";
+    return output;
+  }
+  public String htmlView() {
+    String output = "<h2>" + getTitle() + "</h2>" + "\n";
+    output += "<blockquote>" + getIntro() + "</blockquote>" + "\n";
+    output += "<p>" + getBody() + "</p>" + "\n";
+    output += "<em>Written by " + getAuthor() + " on " + getDate() + "</em>";
+    return output;
+  }
+}
