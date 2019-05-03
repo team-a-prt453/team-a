@@ -13,7 +13,7 @@ import java.util.Date;
  */
 public class Hire {
     
- //Before 
+    //Before 
     
 //     public Hire(double commitment, int riskRating, Date maturity) {
 //      this(commitment, 0.00, riskRating, maturity, null);
@@ -30,8 +30,6 @@ public class CapitalCalculationTest(){
       Hire termHire = Hire.createTermHire(riskAdjustedCapitalStrategy, commitment,outstanding, riskRating, maturity,null);
    }
 }
-
-
          //Before 
 //  public Hire(double commitment, int riskRating, Date maturity, Date expiry) {
 //      this(commitment, 0.00, riskRating, maturity, expiry);
@@ -44,7 +42,16 @@ public class Hire(){
    }
    
 
-   public static Hire createTermHire(CapitalStrategy riskAdjustedCapitalStrategy,
+
+  // Before 
+//public Hire(CapitalStrategy capitalStrategy, double commitment,
+//               int riskRating, Date maturity, Date expiry) {
+//      this(capitalStrategy, commitment, 0.00, riskRating, maturity, expiry);
+//   }
+
+
+//after as creation methods
+public static Hire createTermHire(CapitalStrategy riskAdjustedCapitalStrategy,
       double commitment, double outstanding, int riskRating, Date maturity) {
       return new Hire(riskAdjustedCapitalStrategy, commitment,
          outstanding, riskRating, maturity, null);

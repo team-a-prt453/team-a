@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package replace.conditional.logic.with.strategy.pattern;
+package replaceconditionallogicwithstrategypattern_refactored;
 
 /**
  *
  * @author joelb
  */
-public class calculateInsurance {
+public class BankLoan {
     
 }

@@ -23,7 +23,7 @@ public class Hire{
     // class contains a lot of constuctors 
     //dificult to decipher the purpose of each contractor
     
-    
+    // 5 different hiring services 
    public Hire(double commitment, int riskRating, Date maturity) {
       this(commitment, 0.00, riskRating, maturity, null);
    }
