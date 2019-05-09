@@ -1,4 +1,7 @@
-/**the interface between Line and Rectangle objects is incompatible, 
+/**
+ a legacy Rectangle component's display() method expects to receive "x, y, w, h" parameters.
+ But the client wants to pass "upper left x and y" and "lower right x and y". 
+the interface  Rectangle objects is incompatible, 
 the user has to recover the type of each shape and manually supply the correct arguments.**/
 
 
