@@ -1,3 +1,7 @@
+/**the interface between Line and Rectangle objects is incompatible, 
+the user has to recover the type of each shape and manually supply the correct arguments.**/
+
+
 class Line {
     public void draw(int x1, int y1, int x2, int y2) {
         System.out.println("Line from point A(" + x1 + ";" + y1 + "), to point B(" + x2 + ";" + y2 + ")");
@@ -26,3 +30,7 @@ public class AdapterDemo {
         }
     }
 }
+
+Output:
+Line from point A(10;20), to point B(30;60)
+Rectangle with coordinate left-down point (30;60), width: 40, height: 40
