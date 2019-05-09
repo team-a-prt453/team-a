@@ -1,0 +1,27 @@
+class WorkflowWorker
+{
+    private $commands = array();
+
+    public function __construct(EntityManager $entityManager, Serializer $serializer, Channel $channel)
+    {
+        $this->commands = array(
+            'workflow_execution_termination' =>
+                new ConsumeExecutionTerminationCommand($entityManager, $serializer),
+            'workflow_execution_details' =>
+                new ConsumeExecutionDetailsCommand($entityManager, $serializer),
+        );
+
+        $channel->subscribe(array($this, 'onMessage'));
+    }
+
+    public function onMessage($queue, AMQPMessage $message)
+    {
+        if ( ! isset($this->commands[$queue])) {
+            throw new \LogicException('Unsupported queue.');
+        }
+
+        return $this->commands[$queue]->execute($message);
+    }
+
+    // ...
+}
