@@ -1,3 +1,5 @@
+//The intent of this code is to use stacks to convert normal "infix" syntax into "postfix" notation with operator precedence already handled.
+
 public class InterpreterDemo {
     public static boolean precedence(char a, char b) {
         String high = "*/", low = "+-";
