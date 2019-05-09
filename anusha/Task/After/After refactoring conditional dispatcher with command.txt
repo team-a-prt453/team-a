@@ -1,3 +1,5 @@
+/**Here code are clean up. The fields are removed for the different commands and replace them with an array. 
+Besides  the switch statement are also removed for dispatching the request **/
 class WorkflowWorker
 {
     private $commands = array();
