@@ -9,7 +9,7 @@ class Logger
     }
 }
 
-abstract class Shape
+abstract class Stadium
 {
     public void Draw()
     {
