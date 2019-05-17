@@ -1,0 +1,23 @@
+abstract class Stadium
+{
+    public void Draw()
+    {
+        try
+        {
+            // draw any shape
+            // calculate length
+            // calculate width
+            // calculate diameter
+        }
+        catch (Exception excep)
+        {
+            LogError(excep);
+        }
+    }
+
+    public static void LogError(Exception excep)
+    {
+        File.WriteAllText(@"c:\Shape\Errors\Exception.txt", excep.ToString());
+    }
+}
+//here class Stadium has two responsibility; to draw and to log error
