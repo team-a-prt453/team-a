@@ -9,13 +9,16 @@ class Logger
     }
 }
 
-abstract class Shape
+abstract class Stadium
 {
     public void Draw()
     {
         try
         {
             // draw any shape
+            // calculate length
+            // calculate width
+            // calculate diameter
         }
         catch (Exception excep)
         {
