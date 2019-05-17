@@ -1,0 +1,32 @@
+public class MotorBike {
+
+private String name;
+private String model;
+
+public MotorBike() {	
+}
+
+public String getName() {
+	return this.name;
+	}
+
+public String SetName(name) {
+	this.name = name;
+	}
+
+public String getModel() {
+	return this.model;
+	}
+
+public String SetModel(model) { 
+	this.model = model;
+	}
+}
+
+public class main {
+	public static void main(String[] args) {
+	MotorBike motorbikeInstance = new motorbike();
+
+	MotorBike motorbikeInstance2 = new motorbike(); //more than one instance can be created
+	}
+}

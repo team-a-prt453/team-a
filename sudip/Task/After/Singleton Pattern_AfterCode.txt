@@ -1,0 +1,41 @@
+public class MotorBike {
+
+private String name;
+private String model;
+
+private static MotorBikeInstance = new MotorBike();
+private MotorBike();
+
+public static MotorBike getInstance() {
+	if(Instance != null){
+		return new MotorBike();
+		}
+	else { 
+		return MotorBikeInstance; }
+	} //check just for one instance here
+
+public String getName() {
+  return this.name;
+	}
+
+public String SetName(name) {
+  this.name = name;
+	}
+
+public String getModel() {
+  return this.model;
+	}
+
+public String SetModel(model) {
+  this.model = model;
+	}
+}
+
+//instantiation example
+
+public class main {
+	public static void main(String[] args) { 
+		MotorBike motorbikeInstance = MotorBike.getInstance();
+		motorbikeInstance.model = model;
+	}
+}
