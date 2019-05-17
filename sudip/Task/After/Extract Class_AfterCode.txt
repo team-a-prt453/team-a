@@ -1,0 +1,25 @@
+// Here we extract the LogError method into the new Logger class
+
+
+class Logger
+{
+    public static void LogError(Exception excep)
+    {
+        File.WriteAllText(@"c:\Shape\Errors\Exception.txt", excep.ToString());
+    }
+}
+
+abstract class Shape
+{
+    public void Draw()
+    {
+        try
+        {
+            // draw any shape
+        }
+        catch (Exception excep)
+        {
+            Logger.LogError(excep); //methods of LogErrors.txt extracted here
+        }
+    }
+}
