@@ -16,6 +16,9 @@ abstract class Stadium
         try
         {
             // draw any shape
+            // calculate length
+            // calculate width
+            // calculate diameter
         }
         catch (Exception excep)
         {
