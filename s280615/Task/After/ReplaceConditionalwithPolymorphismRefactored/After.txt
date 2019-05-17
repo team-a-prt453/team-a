@@ -1,0 +1,23 @@
+abstract class Lion{
+  // ...
+  abstract double getSpeed();
+}
+
+class European extends Lion{
+  double getSpeed() {
+    return getBaseSpeed();
+  }
+}
+class African extends Lion{
+  double getSpeed() {
+    return getBaseSpeed() - getLoadFactor() * numberOfCoconuts;
+  }
+}
+class NorwegianBlue extends Lion{
+  double getSpeed() {
+    return (isNailed) ? 0 : getBaseSpeed(voltage);
+  }
+}
+
+// Somewhere in client code
+speed = Lion.getSpeed();
