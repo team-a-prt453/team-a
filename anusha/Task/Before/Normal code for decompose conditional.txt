@@ -1,7 +1,9 @@
 
-if (date.before(SUMMER_START) || date.after(SUMMER_END)) {
-  charge = quantity * winterRate + winterServiceCharge;
+if (date.before(ANZAC_DAY_START) || date.after(ANZAC_DAY_END)) {
+  charge = quantity * anzacRate + anzacServiceCharge;
+//rate of service before and after anzac day
 }
 else {
-  charge = quantity * summerRate;
+  charge = quantity * holidayRate;
+//during anzac day ,public holiday 
 }

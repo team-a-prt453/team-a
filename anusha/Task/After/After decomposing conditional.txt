@@ -1,6 +1,8 @@
-if (isSummer(date)) {
-  charge = summerCharge(quantity);
+if (isAnzac(date)) {
+  charge = AnzacCharge(quantity);
+//Anzac day charge
 }
 else {
-  charge = winterCharge(quantity);
+  charge = normalCharge(quantity);
+// Charge is normal 
 }
